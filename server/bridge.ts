@@ -7,7 +7,7 @@
  */
 import { AppKit } from '@circle-fin/app-kit'
 import { createViemAdapterFromPrivateKey } from '@circle-fin/adapter-viem-v2'
-import type { TransactionPreview } from '../src/lib/types'
+import type { TransactionPreview } from '../src/lib/types.js'
 
 // Chain identifier map (normalised input → App Kit string)
 const CHAIN_MAP: Record<string, string> = {

@@ -9,7 +9,7 @@
  */
 import { createPublicClient, http, parseUnits, formatUnits, erc20Abi } from 'viem'
 import { arcTestnet } from 'viem/chains'
-import type { TransactionPreview } from '../src/lib/types'
+import type { TransactionPreview } from '../src/lib/types.js'
 
 // Community-deployed Uniswap V2 on Arc Testnet
 // Source: https://github.com/osr21/arc-swap — not audited by Circle

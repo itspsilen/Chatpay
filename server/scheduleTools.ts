@@ -10,15 +10,15 @@
  * beyond slippage the run is skipped.
  */
 import { isAddress } from 'viem'
-import { prepareSwap } from './swap'
-import { prepareBridge } from './bridge'
+import { prepareSwap } from './swap.js'
+import { prepareBridge } from './bridge.js'
 import type {
   SchedulePreview,
   ScheduleAction,
   ScheduleFrequency,
   BatchPreview,
   BatchRecipient,
-} from '../src/lib/types'
+} from '../src/lib/types.js'
 
 const MAX_BATCH = 50
 

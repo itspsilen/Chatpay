@@ -12,7 +12,7 @@ import {
   KNOWN_TOKEN_MAP,
   getKnownPriceUsd,
   USDC_ADDRESS,
-} from '../src/lib/tokens'
+} from '../src/lib/tokens.js'
 
 const ARC_EXPLORER = 'https://explorer.testnet.arc.io'
 // Arcscan token-balance API (may return 404 — we degrade gracefully)

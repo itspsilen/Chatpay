@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { handlePreflight, setCors } from '../_cors'
-import { getTxHistory } from '../../server/arcClient'
+import { handlePreflight, setCors } from '../_cors.js'
+import { getTxHistory } from '../../server/arcClient.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (handlePreflight(req, res)) return

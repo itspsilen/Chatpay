@@ -5,8 +5,8 @@
  * Max duration: 60 s (Vercel hobby). Long tool chains trimmed to ≤ 3 rounds.
  */
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { handlePreflight, setCors } from './_cors'
-import { runChat } from '../server/gemini'
+import { handlePreflight, setCors } from './_cors.js'
+import { runChat } from '../server/gemini.js'
 import {
   getAllBalances,
   getTxHistory,
@@ -18,15 +18,15 @@ import {
   lookupNFT,
   upcomingMints,
   webSearch,
-} from '../server/arcClient'
-import { prepareBridge } from '../server/bridge'
-import { prepareSwap } from '../server/swap'
-import { createSchedulePreview, previewBatch as previewBatchTool } from '../server/scheduleTools'
-import { KNOWN_TOKENS } from '../src/lib/tokens'
-import type { TransactionPreview, TxAction } from '../src/lib/types'
+} from '../server/arcClient.js'
+import { prepareBridge } from '../server/bridge.js'
+import { prepareSwap } from '../server/swap.js'
+import { createSchedulePreview, previewBatch as previewBatchTool } from '../server/scheduleTools.js'
+import { KNOWN_TOKENS } from '../src/lib/tokens.js'
+import type { TransactionPreview, TxAction } from '../src/lib/types.js'
 
 // Re-export BatchPreview type (used inline below)
-type BatchPreview = import('../src/lib/types').BatchPreview
+type BatchPreview = import('../src/lib/types.js').BatchPreview
 
 const ARC_EXPLORER = 'https://explorer.testnet.arc.io'
 

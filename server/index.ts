@@ -3,14 +3,14 @@
  * Runs on port 3001. The Vite dev server proxies /api/* to this server.
  * Start with: bun run server
  */
-import { runChat } from './gemini'
+import { runChat } from './gemini.js'
 import {
   lookupToken,
   listNewTokens,
   lookupNFT,
   upcomingMints,
   webSearch,
-} from './dataService'
+} from './dataService.js'
 import {
   getAllBalances,
   getTokenBalance,
@@ -19,12 +19,12 @@ import {
   getTxStatus,
   estimateGasForSend,
   checkAddress as checkAddressRpc,
-} from './arcClient'
-import { prepareBridge } from './bridge'
-import { prepareSwap } from './swap'
-import { createSchedulePreview, previewBatch as previewBatchTool } from './scheduleTools'
-import { KNOWN_TOKENS } from '../src/lib/tokens'
-import type { TransactionPreview, TxAction } from '../src/lib/types'
+} from './arcClient.js'
+import { prepareBridge } from './bridge.js'
+import { prepareSwap } from './swap.js'
+import { createSchedulePreview, previewBatch as previewBatchTool } from './scheduleTools.js'
+import { KNOWN_TOKENS } from '../src/lib/tokens.js'
+import type { TransactionPreview, TxAction } from '../src/lib/types.js'
 
 const PORT = 3001
 const ARC_EXPLORER = 'https://explorer.testnet.arc.io'

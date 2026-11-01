@@ -13,7 +13,7 @@ import {
   type UpcomingMint,
   type NewToken,
   type WebSearchResult,
-} from '../src/lib/mockData'
+} from '../src/lib/mockData.js'
 
 const ARC_EXPLORER = process.env.ARC_EXPLORER_URL ?? ''
 
