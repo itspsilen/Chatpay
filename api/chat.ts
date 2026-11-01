@@ -13,12 +13,14 @@ import {
   getTxStatus,
   estimateGasForSend,
   checkAddress as checkAddressRpc,
+} from '../server/arcClient.js'
+import {
   lookupToken,
   listNewTokens,
   lookupNFT,
   upcomingMints,
   webSearch,
-} from '../server/arcClient.js'
+} from '../server/dataService.js'
 import { prepareBridge } from '../server/bridge.js'
 import { prepareSwap } from '../server/swap.js'
 import { createSchedulePreview, previewBatch as previewBatchTool } from '../server/scheduleTools.js'
